@@ -7,28 +7,29 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a {text-decoration: none; }
+
 /* Seamless Top Navigation Bar */
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: #99a6b8; /* Slight transparency for a seamless look */
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 15px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  box-shadow: 0 2px 5px#D0D4DA;
   z-index: 100; /* Ensures the navbar is always on top */
 }
 
 .nav-button {
   padding: 10px 20px;
-  background-color: #99a6b8;
+  margin: 0 4px 0 4px;
+  background-color: #0B192C;
   border: none;
   color: whitesmoke;
-  font-size: 16px;
-  border-radius: 5px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
