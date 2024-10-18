@@ -1,7 +1,14 @@
+/* COLOR PALETTE 
+MAIN: #181C14
+SECONDARY: #3C3D37 #697565 #ECDFCC
+
+
+*/
+
 /* General Body Styles */
 body {
-  background-color: #0B192C;
-  color: whitesmoke;
+  background-color: #181C14;
+  color: #ECDFCC;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,14 +25,12 @@ a {text-decoration: none; }
   justify-content: flex-start;
   align-items: center;
   padding: 15px 20px;
-  box-shadow: 0 2px 5px#D0D4DA;
   z-index: 100; /* Ensures the navbar is always on top */
 }
 
 .nav-button {
   padding: 10px 20px;
   margin: 0 4px 0 4px;
-  background-color: #0B192C;
   border: none;
   color: whitesmoke;
   font-size: 20px;
@@ -35,7 +40,7 @@ a {text-decoration: none; }
 }
 
 .nav-button:hover {
-  background-color: #30475E;
+  background-color: #697565;
 }
 
 /* Center Aligning Content */
@@ -59,18 +64,14 @@ a {text-decoration: none; }
 
 /* Short Bio Description Box */
 .descriptionBox {
-  background-color: #1E2A3A;
+  background-color: #3C3D37;
   padding: 20px 20px 20px 300px;
   width: 100%;
-  color: #D0D4DA;
-  box-shadow: 
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12); /* Soft shadow for effect */
+  color: whitesmoke;
   flex-shrink: 1; /* Ensures the box won't grow larger than set width */
+  box-shadow: 
+  0 2px 5px #3C3D37, 0 -2px 5px #3C3D37
+  ;
 }
 
 
