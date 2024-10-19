@@ -41,7 +41,7 @@ a {text-decoration: none; }
 }
 
 .nav-button:hover {
-  background-color: #697565;
+  background-color: #7b9acf;
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
