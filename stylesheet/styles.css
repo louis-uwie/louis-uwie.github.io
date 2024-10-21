@@ -6,13 +6,16 @@ body {
   font-weight: 400;
 }
 
-a {text-decoration: none; }
+a {
+  text-decoration: none; 
+}
 
 * {
   transition: all 0.3s ease;
 }
 
-/* Seamless Top Navigation Bar */
+
+
 .navbar {
   position: fixed;
   top: 0;
@@ -21,8 +24,9 @@ a {text-decoration: none; }
   justify-content: flex-start;
   align-items: center;
   padding: 15px 20px;
-  z-index: 100; /* Ensures the navbar is always on top */
+  z-index: 100;
 }
+
 
 .nav-button {
   padding: 10px 20px;
@@ -70,18 +74,19 @@ a {text-decoration: none; }
 }
 
 
-/* The wrapper will stretch across the full width of the page */
+
 .descriptionBoxWrap {
-  background-color: #151C62; /* Blue background */
-  height: 20vh; /* Full height of the page */
-  width: 100%; /* Full width of the page */
+  background-color: #151C62; 
+  height: 20vh; 
+  width: 100%; 
   color: whitesmoke;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-/* The inner box will center the content with left-aligned text */
+
+
 .descriptionBox {
   max-width: 75%;
   padding: 40px;
@@ -94,21 +99,43 @@ a {text-decoration: none; }
 .future-content {
   margin-top: 40px;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.future-content h2 {
+.content-border {
+  border-radius: 25px;
+  border: 2px solid #151C62;
+  padding: 20px;
+  width: 400px;
+  height: 150px;
+  margin: 20px;
+}
+
+.content-border h2{
   color: #151C62;
-  margin-bottom: 10px;
 }
 
-.future-content p {
-  color: #D0D4DA;
+.content-border p{
+  color: whitesmoke;
+}
+
+.content-border:hover {
+
+  background-color: #151C62;
+  transform: scale(1.1);
+  transition: transform 0.8s ease;
+  transition: background-color 0.5s ease;
 }
 
 .image-cropper {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
+  object-fit: fill;
   position: relative;
   overflow: hidden;
-  border-radius: 50%;
+  outline: 12px solid #151C62;
+  border-radius: 100%;
 }
