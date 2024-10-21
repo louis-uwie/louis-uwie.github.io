@@ -1,21 +1,16 @@
-.colors {
-  color-scheme: 
-              #080E4B, /* Background */
-              #282E78, /* Foreground */
-              #DDD1C7, /* Accent */
-              whitesmoke; /* Primary Text */
-}
-
-/* General Body Styles */
 body {
   background-color: whitesmoke;
-  color: #ECDFCC;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
 }
 
 a {text-decoration: none; }
+
+* {
+  transition: all 0.3s ease;
+}
 
 /* Seamless Top Navigation Bar */
 .navbar {
@@ -41,9 +36,10 @@ a {text-decoration: none; }
 }
 
 .nav-button:hover {
-  background-color: #7b9acf;
+  background-color: #151C62;
   transform: scale(1.1);
   transition: transform 0.3s ease;
+  color: whitesmoke;
 }
 
 /* Center Aligning Content */
@@ -58,27 +54,46 @@ a {text-decoration: none; }
 
 /* Header Section */
 .header {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 40px;
-  font-weight: bold;
+  font-family: Oswold, sans-serif;
   color: #151C62;
-  margin: 0;
+  justify-content: left;
+  align-items: left;
+}
+
+.header p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 60px;
 }
 
 
-/* Short Bio Description Box */
-.descriptionBox {
-  background-color: #151C62;
-  padding: 20px 20px 20px 300px;
-  width: 100%;
+/* The wrapper will stretch across the full width of the page */
+.descriptionBoxWrap {
+  background-color: #151C62; /* Blue background */
+  height: 20vh; /* Full height of the page */
+  width: 100%; /* Full width of the page */
   color: whitesmoke;
-  flex-shrink: 1; /* Ensures the box won't grow larger than set width */
-  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* The inner box will center the content with left-aligned text */
+.descriptionBox {
+  max-width: 75%;
+  padding: 40px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
 
 /* Future Content Sections */
 .future-content {
   margin-top: 40px;
+  text-align: center;
 }
 
 .future-content h2 {
@@ -90,7 +105,10 @@ a {text-decoration: none; }
   color: #D0D4DA;
 }
 
-/* Smooth transitions for interactive elements */
-* {
-  transition: all 0.3s ease;
+.image-cropper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
